@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  @apply font-poppins;
+  @apply font-poppins bg-zinc-900;
 }
 
 .links-list li {

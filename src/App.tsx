@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { CircleNotch } from "phosphor-react";
 import { Icons } from "./components/icons";
 
 interface PersonalLinks {
@@ -23,14 +24,18 @@ function App() {
   const { data, loading } = useQuery<{ personalLinks: PersonalLinks[] }>(GET_LINKS_QUERY);
 
   if (!data || !data.personalLinks) {
-    return <div>Vazio</div>;
+    return (
+      <div className="flex w-full min-h-screen items-center justify-center">
+        <CircleNotch size={64} color="#fff" className="animate-spin" />
+      </div>
+    );
   }
 
   return (
-    <main className="flex flex-col w-full min-h-screen items-center bg-zinc-900 text-white px-2">
+    <main className="flex flex-col w-full min-h-screen items-center text-white px-2">
       <div className="flex items-center mt-16 flex-col w-full md:w-2/4 lg:w-1/4 bg-zinc-800 rounded-lg px-4 py-16 relative top-0">
         <div className="min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] mb-4 absolute top-[-50px]">
-          <img src="https://github.com/rocketseat.png" alt="Profile Picture" className="rounded-full border-4 border-violet-500" />
+          <img src="https://github.com/Heloriel.png" alt="Profile Picture" className="rounded-full border-4 border-violet-500" />
         </div>
         <div className="mb-4">
           <span>@andradematheus</span>
