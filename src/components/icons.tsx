@@ -1,4 +1,4 @@
-import { DiscordLogo, Envelope, FacebookLogo, Globe, House, InstagramLogo, Link, LinkedinLogo } from "phosphor-react";
+import { DiscordLogo, Envelope, FacebookLogo, GithubLogo, Globe, House, InstagramLogo, Link, LinkedinLogo } from "phosphor-react";
 
 export const Icons = {
   home: <House size={20} color="#fff" className="mr-2" />,
@@ -9,4 +9,5 @@ export const Icons = {
   link: <Link size={20} color="#fff" className="mr-2" />,
   instagram: <InstagramLogo size={20} color="#fff" className="mr-2" />,
   mail: <Envelope size={20} color="#fff" className="mr-2" />,
+  github: <GithubLogo size={20} color="#fff" className="mr-2" />,
 };
