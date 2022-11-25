@@ -11,5 +11,5 @@
 }
 
 .links-list a {
-  @apply flex flex-1 items-center justify-center py-2 my-1 rounded-full border border-violet-500 hover:bg-violet-500 transition-colors;
+  @apply flex flex-1 items-center justify-center py-4 my-1 rounded-xl border border-violet-500 hover:bg-violet-500 transition-colors;
 }
